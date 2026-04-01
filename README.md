@@ -9,14 +9,14 @@ LICENSE
 
 STM32-SIM/  
 ├── Core/  
-│   ├── Inc/            # Main headers  
-│   ├── Src/            # Main sources  
-│   └── Startup/        # Startup files  
+│   ├── Inc/  
+│   ├── Src/                                    
+│   └── Startup/                                  
 ├── Drivers/  
-│   ├── CMSIS/          # CMSIS device and cores  
-│   └── STM32F4xx_HAL_Driver/  # HAL and peripheral drivers  
+│   ├── CMSIS/                                    
+│   └── STM32F4xx_HAL_Driver/
 ├── Middlewares/  
-│   └── FreeRTOS/       # RTOS and related files  
+│   └── FreeRTOS/                               
 ├── STM32F446RETX_FLASH.ld  
 ├── STM32F446RETX_RAM.ld  
-└── Satelite.ioc        # CubeMX project  
+└── Satelite.ioc                                 
