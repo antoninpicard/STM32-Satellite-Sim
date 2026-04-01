@@ -4,9 +4,7 @@
 
 ESP32-FLOOR-BASE/  
 ├── esp32_floor_base.ino  
-
 LICENSE  
-
 STM32-SIM/  
 ├── Core/  
 │   ├── Inc/  
