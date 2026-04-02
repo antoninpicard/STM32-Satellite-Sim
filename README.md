@@ -218,7 +218,7 @@ L'ESP32 sert un dashboard autonome accessible en se connectant au reseau WiFi `S
 4. Ouvrir un navigateur et aller sur `http://192.168.4.1`.
 5. Les donnees de telemetrie s'affichent en temps reel et les commandes peuvent etre envoyees.
 
-![GIF de demo](docs/img/normal_mode.gif)
+
 
 ### Navigation OLED
 
@@ -228,7 +228,7 @@ Le joystick permet de naviguer entre cinq ecrans sur le SSD1306 :
 3. **Alarmes** — Etat actuel des alarmes
 4. **Mode** — Mode actif, etat du buzzer
 5. **Statut** — Etat d'initialisation des capteurs, valeurs brutes du joystick
-
+![GIF de demo](docs/img/normal_mode.gif)
 ---
 
 ## Arborescence du projet
