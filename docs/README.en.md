@@ -27,7 +27,6 @@ The **STM32** side handles all the "onboard" logic: sensor acquisition, alarm ev
 
 The **ESP32** acts as a ground station. It receives telemetry over UART, creates a WiFi access point, and serves a single-page web dashboard via WebSocket for real-time data visualization and command input.
 
-<!-- TODO: add a high-level architecture diagram (e.g. STM32 <-> UART <-> ESP32 <-> WiFi <-> Browser) -->
 ![Architecture diagram](../docs/img/architecture.jpg)
 
 ---
@@ -50,7 +49,6 @@ The **ESP32** acts as a ground station. It receives telemetry over UART, creates
 
 ### Wiring
 
-<!-- TODO: add the electrical schematic (Fritzing, KiCad, or hand-drawn) -->
 ![Wiring schematic](../docs/img/schematic.jpg)
 
 **STM32 <-> ESP32 UART link:**
@@ -77,7 +75,6 @@ The **ESP32** acts as a ground station. It receives telemetry over UART, creates
 | LED | PA8 | GPIO output |
 | Debug UART | PA2 (TX), PA3 (RX) | USART2 |
 
-<!-- TODO: add a photo of the real wiring / breadboard -->
 ![Wiring photo](../docs/img/setup.jpg)
 
 ---
@@ -175,7 +172,6 @@ All thresholds can be adjusted in real time from the web dashboard.
 
 The ESP32 serves a self-contained dashboard accessible by connecting to the `SATELLITE_SIM` WiFi network and navigating to `192.168.4.1`.
 
-<!-- TODO: add a screenshot or GIF of the web dashboard in action -->
 ![Dashboard screenshot](../docs/img/dashboard.gif)
 
 **Features:**
@@ -190,7 +186,6 @@ The ESP32 serves a self-contained dashboard accessible by connecting to the `SAT
   - Altitude bounds (m, low/high)
 - **Error mode handling** — When an alarm threshold is exceeded, the satellite can automatically enter Error mode. The STM32 displays a dedicated error screen on the OLED, the buzzer emits continuous beeps (Error High) or short beeps (Error Low), and the operator must perform a physical joystick acknowledgment sequence (Right -> Left -> Right) to clear the error and return to Nominal mode.
 
-<!-- TODO: add a GIF showing the error mode trigger from the website and joystick acknowledgment on the OLED -->
 ![Error mode](../docs/img/error_mode.gif)
 
 - **Data dump** — Request a full snapshot of current sensor values
@@ -227,7 +222,6 @@ The ESP32 serves a self-contained dashboard accessible by connecting to the `SAT
 4. Open a browser and go to `http://192.168.4.1`.
 5. You should see live telemetry data and be able to send commands.
 
-<!-- TODO: add a short GIF or video showing the full workflow (boot -> dashboard -> mode change) -->
 ![Demo GIF](../docs/img/normal_mode.gif)
 
 ### OLED Navigation
