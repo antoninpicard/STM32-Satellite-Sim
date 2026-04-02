@@ -27,7 +27,6 @@ Le **STM32** gere toute la logique "embarquee" : acquisition capteurs, evaluatio
 
 L'**ESP32** joue le role de station au sol. Il recoit la telemetrie via UART, cree un point d'acces WiFi, et sert un dashboard web monopage via WebSocket pour la visualisation des donnees en temps reel et l'envoi de commandes.
 
-<!-- TODO: ajouter un schema d'architecture haut niveau (ex: STM32 <-> UART <-> ESP32 <-> WiFi <-> Navigateur) -->
 ![Schema d'architecture](docs/img/architecture.jpg)
 
 ---
@@ -50,7 +49,6 @@ L'**ESP32** joue le role de station au sol. Il recoit la telemetrie via UART, cr
 
 ### Cablage
 
-<!-- TODO: ajouter le schema electrique (Fritzing, KiCad, ou dessin a la main) -->
 ![Schema electrique](docs/img/schematic.jpg)
 
 **Liaison UART STM32 <-> ESP32 :**
@@ -77,7 +75,6 @@ L'**ESP32** joue le role de station au sol. Il recoit la telemetrie via UART, cr
 | LED | PA8 | Sortie GPIO |
 | UART Debug | PA2 (TX), PA3 (RX) | USART2 |
 
-<!-- TODO: ajouter une photo du cablage reel / breadboard -->
 ![Photo du cablage](docs/img/setup.jpg)
 
 ---
@@ -175,7 +172,6 @@ Tous les seuils sont modifiables en temps reel depuis le dashboard web.
 
 L'ESP32 sert un dashboard autonome accessible en se connectant au reseau WiFi `SATELLITE_SIM` puis en ouvrant `192.168.4.1` dans un navigateur.
 
-<!-- TODO: ajouter une capture d'ecran ou un GIF du dashboard web en action -->
 ![Capture du dashboard](docs/img/dashboard.gif)
 
 **Fonctionnalites :**
@@ -190,7 +186,6 @@ L'ESP32 sert un dashboard autonome accessible en se connectant au reseau WiFi `S
   - Limites d'altitude (m, basse/haute)
 - **Gestion du mode erreur** — Lorsqu'un seuil d'alarme est depasse, le satellite peut passer automatiquement en mode Error. Le STM32 affiche alors un ecran d'erreur dedie sur l'OLED, le buzzer emet des bips continus (Error High) ou courts (Error Low), et l'operateur doit effectuer une sequence d'acquittement physique au joystick (Droite -> Gauche -> Droite) pour sortir de l'erreur et revenir en mode Nominal.
 
-<!-- TODO: ajouter un GIF montrant le passage en mode erreur depuis le site et l'acquittement joystick sur l'OLED -->
 ![Mode erreur](docs/img/error_mode.gif)
 
 - **Data dump** — Demande d'un instantane complet des valeurs capteurs actuelles
@@ -223,7 +218,6 @@ L'ESP32 sert un dashboard autonome accessible en se connectant au reseau WiFi `S
 4. Ouvrir un navigateur et aller sur `http://192.168.4.1`.
 5. Les donnees de telemetrie s'affichent en temps reel et les commandes peuvent etre envoyees.
 
-<!-- TODO: ajouter un GIF ou une video courte montrant le workflow complet (boot -> dashboard -> changement de mode) -->
 ![GIF de demo](docs/img/normal_mode.gif)
 
 ### Navigation OLED
