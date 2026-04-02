@@ -263,4 +263,3 @@ Certaines images d'illustration (schemas, diagrammes) ont ete generees avec **Ge
 Merci d'avoir pris le temps de regarder ce projet. Si vous avez des questions, des suggestions ou simplement envie d'en discuter, n'hesitez pas a ouvrir une issue ou a me contacter. J'espere que ce projet pourra vous inspirer ou vous etre utile.
 
 
-
