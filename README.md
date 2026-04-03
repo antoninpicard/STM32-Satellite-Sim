@@ -251,7 +251,7 @@ Le joystick permet de naviguer entre cinq ecrans sur le SSD1306 :
 ```
 ### IA
 
-Certaines images d'illustration (schemas, diagrammes) ont ete generees avec **Gemini**. Les photos du montage reel sont authentiques. **Claude** a ete utilise comme outil d'apprentissage et d'assistance pour certains elements du code.
+##### Certaines images d'illustration (schemas, diagrammes) ont ete generees avec **Gemini**. Les photos du montage reel sont authentiques. **Claude** a ete utilise comme outil d'apprentissage et d'assistance pour certains elements du code.
 ---
 
 Merci d'avoir pris le temps de regarder ce projet. Si vous avez des questions, des suggestions ou simplement envie d'en discuter, n'hesitez pas a ouvrir une issue ou a me contacter. J'espere que ce projet pourra vous inspirer ou vous etre utile.
