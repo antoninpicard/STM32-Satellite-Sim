@@ -7,7 +7,7 @@
  *            For more information about which c-functions
  *            need which of these lowlevel functions
  *            please consult the Newlib libc-manual
- ******************************************************************************
+ ****************************************************************************** 
  * @attention
  *
  * Copyright (c) 2020-2025 STMicroelectronics.
